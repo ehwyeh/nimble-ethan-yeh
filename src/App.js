@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Component } from "react";
+import $ from 'jquery';
+
+
+import Main from "./components/main.jsx";
 
 function App() {
   return (
     <header>
-      <p>
-        Edit <code>App.js</code> and save to reload
-      </p>
+      <Main />
+
     </header>
   );
 }

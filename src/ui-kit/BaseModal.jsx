@@ -5,7 +5,7 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const portalRoot = document.getElementById('portal-root');
 
-export const BaseModal = ({ children }) => {
+const BaseModal = ({ children }) => {
   const modalRoot = React.useRef(null);
   const modalRef = React.useRef(null);
 
@@ -80,3 +80,5 @@ const Container = styled.div`
 
   animation: ${fadeIn} 300ms ease-in-out;
 `;
+
+export default BaseModal;
